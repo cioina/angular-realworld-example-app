@@ -41,8 +41,8 @@
     "scripts": {
         "ng": "ng",
         "config": "ts-node ./set-env.ts",
-        "prod": "npm run config -- --API_URL=http://localhost:1500/TEST/laravel-realworld/public/api && ng build --prod  --base-href /TEST/laravel-realworld/public/frontend/angular/ --output-path=dist",
-        "start": "npm run prod "
+        "prod": "npm run config -- --API_URL=$API_URL && ng build --prod  --base-href $PUBLIC_PATH --output-path=dist",
+        "start": "npm run prod && node server.js"
     },
     "repository": {
         "type": "git",
