@@ -1,0 +1,57 @@
+{
+    "name": "nodejs-ex",
+    "version": "0.0.1",
+    "description": "Node.js sample app for OpenShift 3",
+    "main": "server.js",
+    "dependencies": {
+        "@angular-devkit/build-angular": "~0.13.3",
+        "@angular-devkit/core": "^7.3.3",
+        "@angular/animations": "~7.2.9",
+        "@angular/cli": "^7.3.3",
+        "@angular/common": "~7.2.9",
+        "@angular/compiler": "~7.2.9",
+        "@angular/compiler-cli": "~7.2.9",
+        "@angular/core": "~7.2.9",
+        "@angular/forms": "~7.2.9",
+        "@angular/language-service": "~7.2.9",
+        "@angular/platform-browser": "~7.2.9",
+        "@angular/platform-browser-dynamic": "~7.2.9",
+        "@angular/router": "~7.2.9",
+        "@types/node": "^11.9.5",
+        "chai": "^4.2.0",
+        "chai-http": "^4.2.1",
+        "core-js": "^2.6.5",
+        "ejs": "^2.4.1",
+        "express": "^4.13.4",
+        "marked": "^0.6.1",
+        "mocha": "^6.0.2",
+        "object-assign": "4.1.1",
+        "rxjs": "^6.4.0",
+        "rxjs-compat": "^6.4.0",
+        "ts-node": "~8.0.2",
+        "tslint": "~5.14.0",
+        "typescript": "3.2.4",
+        "yargs": "^13.2.1",
+        "zone.js": "^0.8.29"
+    },
+    "engine": {
+        "node": "*",
+        "npm": "*"
+    },
+    "scripts": {
+        "ng": "ng",
+        "config": "ts-node ./set-env.ts",
+        "prod": "npm run config -- --API_URL=http://localhost:1500/TEST/laravel-realworld/public/api && ng build --prod  --base-href /TEST/laravel-realworld/public/frontend/angular/ --output-path=dist",
+        "start": "npm run prod "
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/sclorg/nodejs-ex.git"
+    },
+    "author": "Steve Speicher <sspeiche@gmail.com>",
+    "license": "CC-BY-1.0",
+    "bugs": {
+        "url": "http://github.com/sclorg/nodejs-ex/issues"
+    },
+    "homepage": "http://github.com/sclorg/nodejs-ex"
+}
